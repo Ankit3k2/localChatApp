@@ -1,0 +1,25 @@
+{
+  "name": "localchatapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ankit3k2/localChatApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ankit3k2/localChatApp/issues"
+  },
+  "homepage": "https://github.com/Ankit3k2/localChatApp#readme",
+  "dependencies": {
+    "@types/node": "^25.3.3",
+    "@types/ws": "^8.18.1",
+    "ws": "^8.19.0"
+  }
+}
