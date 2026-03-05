@@ -12,7 +12,7 @@ wss.on("connection",(socket,request)=>{
 
         console.log(`DATA => ${Data}`)
 
-        ws.clients.forEach((client)=>{
+        wss.clients.forEach((client)=>{
             if(client.readyState === WebSocket.OPEN) client.send(`Server broadcast : ${Data}`)
         })
     })
