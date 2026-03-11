@@ -1,6 +1,7 @@
-import {WebSocketServer} from "ws"
+import { WebSocketServer, WebSocket } from "ws"
 
-const wss = new WebSocketServer({port:8080})
+const PORT = process.env.PORT || 3000;
+const wss = new WebSocketServer({port:PORT})
 
 wss.on("connection",(socket,request)=>{
 
