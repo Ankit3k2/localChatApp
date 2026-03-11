@@ -15,11 +15,12 @@ function App() {
     
 
     
-      const ws = new WebSocket("wss://localchatapp-pg3o.onrender.com"")
+      const ws = new WebSocket("wss://localchatapp-pg3o.onrender.com")
       setConnection(ws)
         
       ws.addEventListener("open",()=>{
-        setStatus("CONNECTED TO ws://localhost:8080")
+        setStatus("CONNECTED TO RENDER SERVER")
+        console.log("WebSocket connected")
         setLog((prev)=>["[SYSTEM]---TUNNEL ESTABLISHED",...prev])
       })
 
