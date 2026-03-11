@@ -15,7 +15,7 @@ function App() {
     
 
     
-      const ws = new WebSocket("ws://localhost:8080")
+      const ws = new WebSocket("wss://localchatapp-pg3o.onrender.com"")
       setConnection(ws)
         
       ws.addEventListener("open",()=>{
